@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-def print_last_digit(number):
-    # First print function, using string formatting
-    print("Last digit: {}".format(abs(number) % 10), end="")  # Prints formatted string
-    return abs(number) % 10  # Returns last digit
-
+def uppercase(str):
+    for i in str:
+        C = ord(i) > 96 and ord(i) < 123
+        print("{}".format(chr(ord(i) - 32 if C else ord(i))), end="")
+    print()
