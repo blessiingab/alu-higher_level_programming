@@ -1,4 +1,9 @@
 #!/usr/bin/python3
-def print_last_digit(number):
-    print(abs(number) % 10, end="")
-    return (abs(number) % 10)
+def uppercase(str):
+    result = ""
+    for char in str:
+        if 'a' <= char <= 'z':  # Check if the character is lowercase
+            result += chr(ord(char) - 32)  # Convert to uppercase using ASCII value
+        else:
+            result += char  # Keep non-lowercase characters unchanged
+    print(result)
