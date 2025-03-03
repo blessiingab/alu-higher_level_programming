@@ -1,14 +1,15 @@
 #!/usr/bin/python3
 """
 This module defines a Square class with attributes for size and position.
-It includes methods for computing the area and printing the square with proper formatting.
+It includes methods for computing the area and printing 
+the square with proper formatting.
 """
+
 
 class Square:
     """
     A class that defines a square with size and position attributes.
     """
-    
     def __init__(self, size=0, position=(0, 0)):
         """
         Initializes the square with a given size and position.
