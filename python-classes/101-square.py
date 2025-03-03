@@ -1,16 +1,13 @@
 #!/usr/bin/python3
-
 """
 This module defines a Square class with attributes for size and position.
 It includes methods for computing the area and printing the square with proper formatting.
 """
 
-
 class Square:
     """
     A class that defines a square with size and position attributes.
     """
-
     def __init__(self, size=0, position=(0, 0)):
         """
         Initializes the square with a given size and position.
@@ -56,11 +53,8 @@ class Square:
         Raises:
             TypeError: If position is not a tuple of two non-negative integers.
         """
-        if (
-            not isinstance(value, tuple)
-            or len(value) != 2
-            or not all(isinstance(num, int) and num >= 0 for num in value)
-        ):
+        if (not isinstance(value, tuple) or len(value) != 2 or
+            not all(isinstance(num, int) and num >= 0 for num in value)):
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
 
